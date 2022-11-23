@@ -1,4 +1,4 @@
-# React-Testing
-    + One file determine one test suite 
-    + We can use skip / only for a group of test( describe )
-    + We could have nested group of tests (Hello Test -> Prop Test) 
+# React-Testing ( fileName convention )
+    + Either use ?.test.tsx or ?.spec.tsx
+    + Either put the file in the same folder where it belongs the file we wanna test or a global folder __tests__
+    + we can use it ( and fit for only and xit for skip )
