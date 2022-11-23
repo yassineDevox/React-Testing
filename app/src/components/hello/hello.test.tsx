@@ -7,9 +7,11 @@ test('Hello renders correctly', () => {
    expect(textElement).toBeInTheDocument()
 })
 
-test('Hello renders with a name', () => {
+//only runs that test
+test.only('Hello renders with a name', () => {
    render(<Hello name="yassine" />)
    const textElement = screen.getByText(/hello yassine 😇!/i)
    expect(textElement).toBeInTheDocument()
 })
-
+//only skip that test 
+test.skip('Hello test to be skipped', () => { })
