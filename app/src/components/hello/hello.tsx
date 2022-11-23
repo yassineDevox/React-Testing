@@ -1,8 +1,7 @@
-import React from 'react'
- const Hello = () => {
-  return (
-    <div>Hello World 😇!</div>
-  )
+
+interface HelloProp {
+  name?: string
 }
+const Hello = ({ name }: HelloProp) => <div>Hello {name ? name : "World"} 😇!</div>
 
 export default Hello
