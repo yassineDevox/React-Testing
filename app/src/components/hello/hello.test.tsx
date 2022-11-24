@@ -5,13 +5,13 @@ import Hello from "./hello"
 describe('Hello', () => {
 
    //only runs this test
-   describe('Props', () => {
-      test('renders with a name', () => {
-         render(<Hello name="yassine" />)
-         const textElement = screen.getByText(/hello yassine 😇!/i)
-         expect(textElement).toBeInTheDocument()
-      })
-   })
+   // describe('Props', () => {
+   //    test('renders with a name', () => {
+   //       render(<Hello name="yassine" />)
+   //       const textElement = screen.getByText(/hello yassine 😇!/i)
+   //       expect(textElement).toBeInTheDocument()
+   //    })
+   // })
 
    test('renders correctly', () => {
       render(<Hello />)

@@ -43,5 +43,15 @@
   },
   "devDependencies": {
     "@types/testing-library__jest-dom": "^5.14.5"
+  },
+  "jest":{
+    "coverageThreshold":{
+      "global":{
+        "branches":80,
+        "functions":80,
+        "lines":80,
+        "statement":-10
+      }
+    }
   }
 }
