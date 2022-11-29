@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react"
 import React from "react"
 import QbRole from "./QbRole"
 
-describe("Query by role component & options", () => {
+describe("Query by test id ", () => {
 
     test('renders', () => {
         render(<QbRole />)
@@ -31,6 +31,8 @@ describe("Query by role component & options", () => {
         const imgEl = screen.getByAltText("RTL")
         //by title 
         const closeSpanEl = screen.getByTitle("close")
+        //by testid
+        const customEl = screen.getByTestId("custom-el")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -44,6 +46,7 @@ describe("Query by role component & options", () => {
         expect(fullNameInputEl).toBeInTheDocument()
         expect(imgEl).toBeInTheDocument()
         expect(closeSpanEl).toBeInTheDocument()
+        expect(customEl).toBeInTheDocument()
     })
 
 
