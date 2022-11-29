@@ -47,6 +47,7 @@ describe("Query by test id ", () => {
         expect(imgEl).toBeInTheDocument()
         expect(closeSpanEl).toBeInTheDocument()
         expect(customEl).toBeInTheDocument()
+        
     })
 
 
