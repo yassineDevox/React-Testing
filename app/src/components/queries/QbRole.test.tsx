@@ -31,7 +31,7 @@ describe("Query by test id ", () => {
         const imgEl = screen.getByAltText("RTL")
         //by title 
         const closeSpanEl = screen.getByTitle("close")
-        //by testid
+        //by testid (when the text is dynamic)
         const customEl = screen.getByTestId("custom-el")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
