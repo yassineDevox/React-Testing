@@ -14,3 +14,5 @@ describe("skills",()=>{
         expect(skillsItems).toHaveLength(items.length)
     })
 })
+
+//textmach represents either String or regex or a func
