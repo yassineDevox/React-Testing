@@ -21,6 +21,8 @@ describe("Query by role component & options", () => {
         const termsEl = screen.getByLabelText("I agree to the terms and conditions",{
             selector:"input"
         })
+        //input full name by placeholder text 
+        const fnInptEl = screen.getByPlaceholderText("fullName")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -29,6 +31,7 @@ describe("Query by role component & options", () => {
         expect(h2El).toBeInTheDocument()
         expect(nameEl).toBeInTheDocument()
         expect(termsEl).toBeInTheDocument()
+        expect(fnInptEl).toBeInTheDocument()
 
     })
 
