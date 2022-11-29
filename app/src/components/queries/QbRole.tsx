@@ -6,6 +6,7 @@ const QbRole = () => {
             <h1>heading level 1 </h1>
             <h2>heading level 2</h2>
             <img src="https://testing-library.com/img/octopus-64x64.png" alt="RTL" />
+            <span title="close">X</span>
             <form action="">
                 <div>
                     <label htmlFor="name">Name</label>

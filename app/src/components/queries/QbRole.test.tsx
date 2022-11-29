@@ -29,6 +29,8 @@ describe("Query by role component & options", () => {
         const fullNameInputEl = screen.getByDisplayValue("Yassine")
         //use it to get img by alt
         const imgEl = screen.getByAltText("RTL")
+        //by title 
+        const closeSpanEl = screen.getByTitle("close")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -41,6 +43,7 @@ describe("Query by role component & options", () => {
         expect(paragraph).toBeInTheDocument()
         expect(fullNameInputEl).toBeInTheDocument()
         expect(imgEl).toBeInTheDocument()
+        expect(closeSpanEl).toBeInTheDocument()
     })
 
 
