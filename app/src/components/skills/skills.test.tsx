@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/react"
+import { screen, render, logRoles } from "@testing-library/react"
 import Skills from "./skills"
 
 describe("skills", () => {
@@ -29,14 +29,19 @@ describe("skills", () => {
     })
 
     test("start learning button is eventually displayed", async () => {
-        render(<Skills items={items} />)
+        const view  = render(<Skills items={items} />)
+        // print out the list of all the roles 
+        logRoles(view.container)
+        screen.debug()
         const startLearningBtn = await screen.findByRole(
                 "button",
                 { name: "Start Learning 😇"},
                 { timeout: 3000 }
         )
+        screen.debug()
         expect(startLearningBtn).toBeInTheDocument()
     })
+    //debuggin is actually getting a glims of what the Dom it looks like 
 })
 
 //textmach represents either String or regex or a func
