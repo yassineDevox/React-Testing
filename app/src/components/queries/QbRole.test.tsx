@@ -27,6 +27,8 @@ describe("Query by role component & options", () => {
         const paragraph  = screen.getByText("I'm here 😇")
         //use it to get input element or select that matches the display value 
         const fullNameInputEl = screen.getByDisplayValue("Yassine")
+        //use it to get img by alt
+        const imgEl = screen.getByAltText("RTL")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -38,7 +40,7 @@ describe("Query by role component & options", () => {
         expect(fnInptEl).toBeInTheDocument()
         expect(paragraph).toBeInTheDocument()
         expect(fullNameInputEl).toBeInTheDocument()
-
+        expect(imgEl).toBeInTheDocument()
     })
 
 
