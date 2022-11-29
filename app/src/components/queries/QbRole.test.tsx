@@ -17,6 +17,10 @@ describe("Query by role component & options", () => {
         //heading h1 & h2
         const h1El = screen.getByRole("heading", { level: 1 })
         const h2El = screen.getByRole("heading", { level: 2 })
+        //I agree to the terms and conditions
+        const termsEl = screen.getByLabelText("I agree to the terms and conditions",{
+            selector:"input"
+        })
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -24,6 +28,7 @@ describe("Query by role component & options", () => {
         expect(h1El).toBeInTheDocument()
         expect(h2El).toBeInTheDocument()
         expect(nameEl).toBeInTheDocument()
+        expect(termsEl).toBeInTheDocument()
 
     })
 

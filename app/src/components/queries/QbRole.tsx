@@ -23,7 +23,7 @@ const QbRole = () => {
                     </select>
                 </div>
                 <div>
-                    <label htmlFor="">
+                    <label htmlFor="terms">
                         <input type="checkbox" id="terms" />
                         I agree to the terms and conditions
                     </label>
