@@ -25,6 +25,8 @@ describe("Query by role component & options", () => {
         const fnInptEl = screen.getByPlaceholderText("fullName")
         //use it to find div paragraph or span by text it has ( selector as an options ) 
         const paragraph  = screen.getByText("I'm here 😇")
+        //use it to get input element or select that matches the display value 
+        const fullNameInputEl = screen.getByDisplayValue("Yassine")
         //expect
         expect(btnSubmitEl).toHaveTextContent(/submit/i)
         expect(selectContriesEl).toBeInTheDocument()
@@ -35,6 +37,7 @@ describe("Query by role component & options", () => {
         expect(termsEl).toBeInTheDocument()
         expect(fnInptEl).toBeInTheDocument()
         expect(paragraph).toBeInTheDocument()
+        expect(fullNameInputEl).toBeInTheDocument()
 
     })
 

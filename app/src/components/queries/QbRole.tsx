@@ -9,7 +9,7 @@ const QbRole = () => {
             <form action="">
                 <div>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" placeholder='fullName' />
+                    <input type="text" id="name" placeholder='fullName' defaultValue="Yassine" />
                 </div>
                 <div>
                     <label htmlFor="job-location">
