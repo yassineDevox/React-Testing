@@ -40,4 +40,21 @@ describe("counter", () => {
     expect(counterValEl).toHaveTextContent("10")
 
   })
+
+  test('elements are focused in the right order ', async () => {
+    const user = userEvent.setup()
+    render(<Counter />)
+    const setAmntBtn = screen.getByRole("button", { name: /set/i })
+    const amntInpt = screen.getByRole("spinbutton")
+    const incrementBtn = screen.getByRole("button", { name: /increment/i })
+    await user.tab()
+    expect(incrementBtn).toHaveFocus()
+    await user.tab()
+    expect(amntInpt).toHaveFocus()
+    await user.tab()
+    expect(setAmntBtn).toHaveFocus()
+  })
+  
+
 })
+

@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Skills from './components/skills/skills';
-
+import Counter from './components/counter/counter';
 function App() {
-  return (
-    <Skills items={["hacking","programming","testing"]}/>  
+  return ( 
+    <Counter />
   );
 }
 
