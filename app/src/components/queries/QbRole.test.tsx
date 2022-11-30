@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react"
 import React from "react"
 import QbRole from "./QbRole"
 
-describe("Query by test id ", () => {
+describe.skip("Query by test id ", () => {
 
     test('renders', () => {
         render(<QbRole />)

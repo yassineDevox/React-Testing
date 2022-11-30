@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react"
 import Hello from "./hello"
 
 
-describe('Hello', () => {
+describe.skip('Hello', () => {
 
    // only runs this test
    describe('Props', () => {

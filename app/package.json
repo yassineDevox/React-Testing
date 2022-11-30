@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "coverage":"yarn test --coverage --watchAll --collectCoverageFrom='src/components/**/*{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,spec,test}.{ts,tsx}' " 
+    "coverage": "yarn test --coverage --watchAll --collectCoverageFrom='src/components/**/*{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,spec,test}.{ts,tsx}' "
   },
   "eslintConfig": {
     "extends": [
@@ -44,13 +44,13 @@
   "devDependencies": {
     "@types/testing-library__jest-dom": "^5.14.5"
   },
-  "jest":{
-    "coverageThreshold":{
-      "global":{
-        "branches":80,
-        "functions":80,
-        "lines":80,
-        "statement":-10
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statement": -10
       }
     }
   }

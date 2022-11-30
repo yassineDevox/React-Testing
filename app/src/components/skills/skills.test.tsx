@@ -1,7 +1,7 @@
 import { screen, render, logRoles } from "@testing-library/react"
 import Skills from "./skills"
 
-describe("skills", () => {
+describe.skip("skills", () => {
 
     const items = ["hacker", "dev", "designer"]
 
