@@ -2,6 +2,7 @@ import { screen, render, logRoles } from "@testing-library/react"
 import Skills from "./skills"
 
 describe("skills", () => {
+
     const items = ["hacker", "dev", "designer"]
 
     test("renders with props ", () => {
@@ -31,14 +32,14 @@ describe("skills", () => {
     test("start learning button is eventually displayed", async () => {
         const view  = render(<Skills items={items} />)
         // print out the list of all the roles 
-        logRoles(view.container)
-        screen.debug()
+        // logRoles(view.container)
+        // screen.debug()
         const startLearningBtn = await screen.findByRole(
                 "button",
                 { name: "Start Learning 😇"},
                 { timeout: 3000 }
         )
-        screen.debug()
+        // screen.debug()
         expect(startLearningBtn).toBeInTheDocument()
     })
     //debuggin is actually getting a glims of what the Dom it looks like 
